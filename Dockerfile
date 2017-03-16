@@ -31,4 +31,6 @@ ENV DOCKER_HOST="unix:///var/run/docker.sock"
 ENV JENKINS_HOME="/config"
 ENV JENKINS_OPTS="--httpListenAddress=0.0.0.0 --httpPort=8080 -Djava.awt.headless=true"
 
+VOLUME /config
+
 COPY root/ /
