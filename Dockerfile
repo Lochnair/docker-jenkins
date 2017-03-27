@@ -25,6 +25,10 @@ sha256sum jenkins.war.sha256 || exit 1 && \
 rm jenkins.war.sha256 && \
 cd -
 
+# Add container user to Docker group
+RUN \
+usermod -aG docker cont
+
 ## Environment variables
 ENV DOCKER_HOST="unix:///var/run/docker.sock"
 

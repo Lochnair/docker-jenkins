@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+DGID = $(stat -c '%g' /var/run/docker.sock)
+groupmod -g "$DGID" docker
