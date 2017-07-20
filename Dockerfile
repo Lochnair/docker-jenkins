@@ -14,7 +14,7 @@ apk add \
     unzip
 
 # Jenkins version to install
-ARG JENKINS_VER="2.60.1"
+ARG JENKINS_VER="2.60.2"
 
 # Install Jenkins
 RUN \
